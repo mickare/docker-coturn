@@ -14,7 +14,8 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
 	build-essential \
 	cmake \
 	python \
-	ca-certificates
+	ca-certificates \
+	gettext-base
 
 # Dependencies
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \

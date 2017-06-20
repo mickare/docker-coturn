@@ -31,11 +31,11 @@ WORKDIR /root
 
 RUN git clone https://github.com/coturn/coturn.git /root/coturn
 
-ADD *.sh /root
+ADD *.sh /root/
 RUN chmod +x /root/*.sh
 RUN sh /root/setup.sh
 
-ADD turnserver.conf /etc/turnserver.conf
+ADD turnserver.conf /etc/
 
 EXPOSE 3478
 
